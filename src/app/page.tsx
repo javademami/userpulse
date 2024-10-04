@@ -1,4 +1,3 @@
-// src/app/page.tsx
 'use client';
 
 import Link from "next/link";
@@ -15,8 +14,6 @@ import {
 } from "lucide-react";
 
 export default function Homepage() {
-  const { theme, setTheme } = useTheme();
-
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar /> {/* قرار دادن Navbar در اینجا */}
@@ -79,13 +76,13 @@ export default function Homepage() {
               </div>
               <div className="flex flex-col items-center space-y-2 border p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground italic">
-                  &quot;The insights we've gained have directly contributed to a 30% increase in user satisfaction.&quot;
+                  &quot;The insights we&apos;ve gained have directly contributed to a 30% increase in user satisfaction.&quot;
                 </p>
                 <p className="text-sm font-bold">- Mark T., UX Designer</p>
               </div>
               <div className="flex flex-col items-center space-y-2 border p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground italic">
-                  &quot;Easy to use, powerful analytics. It's become an essential tool in our UX toolkit.&quot;
+                  &quot;Easy to use, powerful analytics. It&apos;s become an essential tool in our UX toolkit.&quot;
                 </p>
                 <p className="text-sm font-bold">- Emily R., CEO</p>
               </div>
