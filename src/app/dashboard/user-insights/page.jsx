@@ -1,6 +1,5 @@
-'use client';
+'use client'; // Specify that this component is a Client Component
 
-import { useState } from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,10 +19,6 @@ const sidebarItems = [
 ];
 
 const UserInsightsPage = () => {
-  // حذف متغیرهای غیرضروری
-  // const [dateRange, setDateRange] = useState('7d');
-  // const { user } = useUser(); // اطلاعات کاربر احراز هویت‌شده را بگیرید
-
   // داده‌های هاردکد شده
   const userEngagementData = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June'],
