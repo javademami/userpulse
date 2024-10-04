@@ -11,7 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Overview } from "@/components/Overview.jsx"
 import { RecentSales } from "@/components/RecentSales.jsx"
 import { Footer } from "@/components/Footer"; 
-import { LayoutDashboard, Users, FileText, Settings, BarChart2, PieChart as PieChartIcon, TrendingUp, Icon as LucideIcon } from 'lucide-react'
+import { LayoutDashboard, Users, FileText, Settings, BarChart2, PieChart as PieChartIcon, TrendingUp } from 'lucide-react'
 
 // برای احراز هویت
 import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs'
@@ -116,7 +116,7 @@ export default function DashboardPage() {
 interface MetricCardProps {
   title: string;
   value: string | number;
-  icon: LucideIcon;
+  icon: typeof BarChart2;  // استفاده از typeof برای تعیین نوع صحیح
 }
 
 // کامپوننت MetricCard با تایپ صحیح
