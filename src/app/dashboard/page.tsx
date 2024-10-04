@@ -11,11 +11,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Overview } from "@/components/Overview.jsx"
 import { RecentSales } from "@/components/RecentSales.jsx"
 import { Footer } from "@/components/Footer"; 
-import { LayoutDashboard, Users, FileText, Settings, BarChart2, PieChart as PieChartIcon, TrendingUp } from 'lucide-react'
+import { LayoutDashboard, Users, FileText, Settings, BarChart2, PieChart as PieChartIcon, TrendingUp, Icon as LucideIcon } from 'lucide-react'
 
 // برای احراز هویت
 import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs'
 
+// آیتم‌های سایدبار
 const sidebarItems = [
   { icon: LayoutDashboard, label: 'Overview', href: '/dashboard' },
   { icon: Users, label: 'User Insights', href: '/dashboard/user-insights' },
@@ -23,6 +24,7 @@ const sidebarItems = [
   { icon: Settings, label: 'Settings', href: '/dashboard/settings' },
 ]
 
+// تعریف صفحه داشبورد
 export default function DashboardPage() {
   const [dateRange, setDateRange] = useState('7d')
 
@@ -110,7 +112,15 @@ export default function DashboardPage() {
   )
 }
 
-function MetricCard({ title, value, icon: Icon }) {
+// تعریف نوع props برای MetricCard
+interface MetricCardProps {
+  title: string;
+  value: string | number;
+  icon: LucideIcon;
+}
+
+// کامپوننت MetricCard با تایپ صحیح
+function MetricCard({ title, value, icon: Icon }: MetricCardProps) {
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
