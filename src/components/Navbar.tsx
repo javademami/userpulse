@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Sun, Moon } from "lucide-react"; // Import آیکن‌ها
 import { useEffect, useState } from "react";
 // Import Clerk components
-import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/nextjs';
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const { user } = useUser(); // دریافت اطلاعات کاربر از Clerk
+  // const { user } = useUser(); // دریافت اطلاعات کاربر از Clerk
 
   // استفاده از useEffect برای اطمینان از اینکه تم فقط در سمت کلاینت تنظیم می‌شود
   useEffect(() => {

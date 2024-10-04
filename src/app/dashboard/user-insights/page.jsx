@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Line, Bar, Doughnut } from "react-chartjs-2";
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, BarElement, ArcElement, Title, Tooltip, Legend } from 'chart.js';
 import { BarChart2, PieChart as PieChartIcon, TrendingUp } from 'lucide-react';
-import { SignedIn, SignedOut, RedirectToSignIn, useUser } from '@clerk/nextjs';
+import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs';
 import { Footer } from "@/components/Footer"; 
 
 // ثبت مقیاس‌ها و اجزا
@@ -20,8 +20,9 @@ const sidebarItems = [
 ];
 
 const UserInsightsPage = () => {
-  const [dateRange, setDateRange] = useState('7d');
-  const { user } = useUser(); // اطلاعات کاربر احراز هویت‌شده را بگیرید
+  // حذف متغیرهای غیرضروری
+  // const [dateRange, setDateRange] = useState('7d');
+  // const { user } = useUser(); // اطلاعات کاربر احراز هویت‌شده را بگیرید
 
   // داده‌های هاردکد شده
   const userEngagementData = {

@@ -73,19 +73,19 @@ export default function Homepage() {
             <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
               <div className="flex flex-col items-center space-y-2 border p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground italic">
-                  "This platform has revolutionized how we understand our users. Highly recommended!"
+                  &quot;This platform has revolutionized how we understand our users. Highly recommended!&quot;
                 </p>
                 <p className="text-sm font-bold">- Sarah J., Product Manager</p>
               </div>
               <div className="flex flex-col items-center space-y-2 border p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground italic">
-                  "The insights we've gained have directly contributed to a 30% increase in user satisfaction."
+                  &quot;The insights we've gained have directly contributed to a 30% increase in user satisfaction.&quot;
                 </p>
                 <p className="text-sm font-bold">- Mark T., UX Designer</p>
               </div>
               <div className="flex flex-col items-center space-y-2 border p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground italic">
-                  "Easy to use, powerful analytics. It's become an essential tool in our UX toolkit."
+                  &quot;Easy to use, powerful analytics. It's become an essential tool in our UX toolkit.&quot;
                 </p>
                 <p className="text-sm font-bold">- Emily R., CEO</p>
               </div>

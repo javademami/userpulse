@@ -6,7 +6,7 @@ import { Navbar } from '@/components/Navbar'; // Import the Navbar component
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Bar } from 'react-chartjs-2';
 import { Pie } from 'react-chartjs-2';
-import { SignedIn, SignedOut, RedirectToSignIn, useUser } from '@clerk/nextjs';
+import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs';
 import { LayoutDashboard, Users, FileText, Settings } from 'lucide-react';
 import { Chart, registerables } from 'chart.js';
 import { Footer } from "@/components/Footer"; 
@@ -15,8 +15,6 @@ import { Footer } from "@/components/Footer";
 Chart.register(...registerables);
 
 const ReportsPage = () => {
-  const { user } = useUser(); // Get user information
-
   // Dummy data for demonstration
   const userEngagementData = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
