@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+
+![User Pulse](public/images/UserPulse.jpg)
+
+# Project Title: User Pulse Dashboard Application
+
+## Description
+
+User Pulse is a modern dashboard application built with Next.js, TypeScript, and Clerk for authentication. The application provides an intuitive interface for users to monitor key metrics, visualize data through interactive charts, and manage user insights effectively.
+
+## Demo
+
+You can view a live demo of the project at [userpulse-plew.vercel.app](https://userpulse-plew.vercel.app).
+
+## Features
+
+- **User Authentication**: Secure sign-in and sign-out functionality using Clerk.
+- **Responsive Design**: Optimized for both desktop and mobile views.
+- **Dynamic Data Visualization**: Interactive charts displaying user engagement, sentiment scores, and conversion rates.
+- **Sidebar Navigation**: Easy navigation through various sections like Overview, User Insights, Reports, and Settings.
+- **Date Range Selector**: Ability to filter metrics by different date ranges (Last 7 days, 30 days, 90 days).
+- **Export Report Functionality**: Option to export metrics for further analysis.
+
+## Technologies Used
+
+- **Frontend**: Next.js, React, TypeScript
+- **UI Components**: Tailwind CSS for styling, Lucide icons for UI elements.
+- **State Management**: React's useState hook for managing local state.
+- **Authentication**: Clerk for user authentication and management.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Navigate to the project directory:
+   ```bash
+   cd <project-directory>
+   ```
 
-## Learn More
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Create a `.env.local` file and add your Clerk publishable key and secret key:
+   ```plaintext
+   NEXTAUTH_URL=http://localhost:3000
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your-publishable-key>
+   CLERK_SECRET_KEY=<your-secret-key>
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Run the application:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+Deploy your application to Vercel or your preferred hosting platform for production use.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to adjust any part of this summary to better fit your project's specifics! If you need further modifications or additional information, let me know!
