@@ -15,7 +15,6 @@ You can view a live demo of the project at [userpulse-plew.vercel.app](https://u
 ## Features
 
 - **User Authentication**: Secure sign-in and sign-out functionality using Clerk.
-- **Responsive Design**: Optimized for both desktop and mobile views.
 - **Dynamic Data Visualization**: Interactive charts displaying user engagement, sentiment scores, and conversion rates.
 - **Sidebar Navigation**: Easy navigation through various sections like Overview, User Insights, Reports, and Settings.
 - **Date Range Selector**: Ability to filter metrics by different date ranges (Last 7 days, 30 days, 90 days).
