@@ -39,7 +39,7 @@ You can view a live demo of the project at [userpulse-plew.vercel.app](https://u
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/javademami/userpulse.git
    ```
 
 2. Navigate to the project directory:
